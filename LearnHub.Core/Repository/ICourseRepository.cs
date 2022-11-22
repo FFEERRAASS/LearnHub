@@ -15,7 +15,7 @@ namespace LearnHub.Core.Repository
         Course GetCourseById(int id);
         List<StudentMarkDTO> SearchStudent(SREACH search);
         Task<List<Category>> GetAllCategoryCourse();
-
+        List<CountStudentCourse> CountStudentCourses();
 
     }
 }

@@ -75,7 +75,7 @@ namespace LearnHub.API.Controllers
 
         }
         [HttpPost]
-        // FFEERRAASS
+        // FFEERRAASS 2222
         [Route("SearchHAHH")]
         
         public List<StudentMarkDTO> SearchStudent(SREACH search)
@@ -86,6 +86,11 @@ namespace LearnHub.API.Controllers
         public async Task<List<Category>> GetAllCategoryCourse()
         {
             return await courseServices.GetAllCategoryCourse();
+        }
+        [HttpGet("Total")]
+        public List<CountStudentCourse> CountStudentCourses()
+        {
+            return courseServices.CountStudentCourses();
         }
 
     }

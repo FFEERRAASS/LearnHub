@@ -16,6 +16,8 @@ namespace LearnHub.Core.Services
         bool DeleteCourse(int id);
         Course GetCourseById(int id);
         Task<List<Category>> GetAllCategoryCourse();
+        List<CountStudentCourse> CountStudentCourses();
+
 
     }
 }

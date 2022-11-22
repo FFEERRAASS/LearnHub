@@ -25,6 +25,12 @@ namespace LearnHub.Infra.Repository
             IEnumerable<Course> result = dbContext.Connection.Query<Course>("COURSE_PACKAGE.GetAllCourses", commandType: CommandType.StoredProcedure);
             return result.ToList();
         }
+        public List<CountStudentCourse> CountStudentCourses()
+        {
+           
+            IEnumerable<CountStudentCourse> result = dbContext.Connection.Query<CountStudentCourse>("COURSE_PACKAGE.totalStudent", commandType: CommandType.StoredProcedure);
+            return result.ToList();
+        }
         public List<StudentMarkDTO> SearchStudent(SREACH search)
         {
             var p = new DynamicParameters();

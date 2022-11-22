@@ -44,6 +44,12 @@ namespace LearnHub.Infra.Services
         {
             return courseRepository.GetCourseById(id);
         }
-        
+        public List<CountStudentCourse> CountStudentCourses()
+        {
+            return courseRepository.CountStudentCourses();
+        }
+
+
+
     }
 }
