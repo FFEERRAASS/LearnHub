@@ -75,7 +75,8 @@ namespace LearnHub.API.Controllers
 
         }
         [HttpPost]
-        [Route("Search")]
+        [Route("SearchHH")]
+        
         public List<StudentMarkDTO> SearchStudent(SREACH search)
         {
             return courseServices.SearchStudent(search);
